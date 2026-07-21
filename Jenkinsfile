@@ -7,6 +7,8 @@ pipeline {
 
     environment {
         CI = 'true'
+        PRACTICE_USERNAME = credentials('practice-username')
+        PRACTICE_PASSWORD = credentials('practice-password')
     }
 
     options {
