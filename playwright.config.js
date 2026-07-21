@@ -4,8 +4,8 @@ module.exports = defineConfig({
     testDir: './',
     use: {
         baseURL: 'https://practice.expandtesting.com',
+        headless: !!process.env.CI,   // headless when CI=true, headed locally
     },
-    headless: false,
     reporter: [
         ['list'],
         ['html', { open: 'never' }],
