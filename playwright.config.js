@@ -5,6 +5,10 @@ module.exports = defineConfig({
     use: {
         baseURL: 'https://practice.expandtesting.com',
     },
-    headless: false
+    headless: false,
+    reporter: [
+        ['list'],
+        ['html', { open: 'never' }],
+        ['junit', { outputFile: 'test-results/junit.xml' }],
+    ],
 });
-
