@@ -5,4 +5,6 @@ module.exports = defineConfig({
     use: {
         baseURL: 'https://practice.expandtesting.com',
     },
+    headless: false
 });
+
